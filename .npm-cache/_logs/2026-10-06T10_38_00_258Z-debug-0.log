@@ -1,0 +1,1156 @@
+0 verbose cli /opt/homebrew/Cellar/node/26.9.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@12.2.0
+2 info using node@v26.9.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/trungtran/Desktop/algo-vis/.npmrc
+5 silly config load:file:/Users/trungtran/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install react-syntax-highlighter
+8 verbose argv "install" "react-syntax-highlighter" "--cache" "/Users/trungtran/Desktop/algo-vis/.npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/trungtran/Desktop/algo-vis/.npm-cache/_logs/2026-10-06T10_38_00_258Z-
+10 verbose logfile /Users/trungtran/Desktop/algo-vis/.npm-cache/_logs/2026-10-06T10_38_00_258Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4395630592 maxSize:1098907648 maxEntrySize:549453824
+13 silly idealTree buildDeps
+14 silly fetch manifest react-syntax-highlighter@*
+15 silly packumentCache full:https://registry.npmjs.org/react-syntax-highlighter cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/npm 338ms
+17 http fetch GET 200 https://registry.npmjs.org/react-syntax-highlighter 303ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/react-syntax-highlighter set size:undefined disposed:false
+19 silly fetch manifest react@^18.2.0
+20 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/react 350ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+23 silly placeDep ROOT react-syntax-highlighter@16.1.1 OK for: algo-vis@0.1.0 want: *
+24 silly fetch manifest @babel/runtime@^7.28.4
+25 silly packumentCache full:https://registry.npmjs.org/@babel%2fruntime cache-miss
+26 silly fetch manifest highlight.js@^10.4.1
+27 silly packumentCache full:https://registry.npmjs.org/highlight.js cache-miss
+28 silly fetch manifest highlightjs-vue@^1.0.0
+29 silly packumentCache full:https://registry.npmjs.org/highlightjs-vue cache-miss
+30 silly fetch manifest lowlight@^1.17.0
+31 silly packumentCache full:https://registry.npmjs.org/lowlight cache-miss
+32 silly fetch manifest prismjs@^1.30.0
+33 silly packumentCache full:https://registry.npmjs.org/prismjs cache-miss
+34 silly fetch manifest refractor@^5.0.0
+35 silly packumentCache full:https://registry.npmjs.org/refractor cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/highlight.js 105ms (cache miss)
+37 silly packumentCache full:https://registry.npmjs.org/highlight.js set size:undefined disposed:false
+38 http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 159ms (cache miss)
+39 silly packumentCache full:https://registry.npmjs.org/@babel%2fruntime set size:undefined disposed:false
+40 http fetch GET 200 https://registry.npmjs.org/prismjs 175ms (cache miss)
+41 silly packumentCache full:https://registry.npmjs.org/prismjs set size:undefined disposed:false
+42 http fetch GET 200 https://registry.npmjs.org/highlightjs-vue 182ms (cache miss)
+43 silly packumentCache full:https://registry.npmjs.org/highlightjs-vue set size:undefined disposed:false
+44 http fetch GET 200 https://registry.npmjs.org/lowlight 230ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/lowlight set size:undefined disposed:false
+46 http fetch GET 200 https://registry.npmjs.org/refractor 233ms (cache miss)
+47 silly packumentCache full:https://registry.npmjs.org/refractor set size:undefined disposed:false
+48 silly placeDep ROOT @babel/runtime@7.29.7 OK for: react-syntax-highlighter@16.1.1 want: ^7.28.4
+49 silly placeDep ROOT highlight.js@10.7.3 OK for: react-syntax-highlighter@16.1.1 want: ^10.4.1
+50 silly placeDep ROOT highlightjs-vue@1.0.0 OK for: react-syntax-highlighter@16.1.1 want: ^1.0.0
+51 silly placeDep ROOT lowlight@1.20.0 OK for: react-syntax-highlighter@16.1.1 want: ^1.17.0
+52 silly placeDep ROOT prismjs@1.30.0 OK for: react-syntax-highlighter@16.1.1 want: ^1.30.0
+53 silly placeDep ROOT refractor@5.0.0 OK for: react-syntax-highlighter@16.1.1 want: ^5.0.0
+54 silly fetch manifest fault@^1.0.0
+55 silly packumentCache full:https://registry.npmjs.org/fault cache-miss
+56 silly fetch manifest @types/hast@^3.0.0
+57 silly packumentCache full:https://registry.npmjs.org/@types%2fhast cache-miss
+58 silly fetch manifest @types/prismjs@^1.0.0
+59 silly packumentCache full:https://registry.npmjs.org/@types%2fprismjs cache-miss
+60 silly fetch manifest hastscript@^9.0.0
+61 silly packumentCache full:https://registry.npmjs.org/hastscript cache-miss
+62 silly fetch manifest parse-entities@^4.0.0
+63 silly packumentCache full:https://registry.npmjs.org/parse-entities cache-miss
+64 http fetch GET 200 https://registry.npmjs.org/@types%2fhast 68ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/@types%2fhast set size:undefined disposed:false
+66 http fetch GET 200 https://registry.npmjs.org/parse-entities 70ms (cache miss)
+67 silly packumentCache full:https://registry.npmjs.org/parse-entities set size:undefined disposed:false
+68 http fetch GET 200 https://registry.npmjs.org/fault 78ms (cache miss)
+69 silly packumentCache full:https://registry.npmjs.org/fault set size:undefined disposed:false
+70 http fetch GET 200 https://registry.npmjs.org/hastscript 276ms (cache miss)
+71 silly packumentCache full:https://registry.npmjs.org/hastscript set size:undefined disposed:false
+72 http fetch GET 200 https://registry.npmjs.org/@types%2fprismjs 417ms (cache miss)
+73 silly packumentCache full:https://registry.npmjs.org/@types%2fprismjs set size:undefined disposed:false
+74 silly placeDep ROOT fault@1.0.4 OK for: lowlight@1.20.0 want: ^1.0.0
+75 silly fetch manifest format@^0.2.0
+76 silly packumentCache full:https://registry.npmjs.org/format cache-miss
+77 http fetch GET 200 https://registry.npmjs.org/format 72ms (cache miss)
+78 silly packumentCache full:https://registry.npmjs.org/format set size:undefined disposed:false
+79 silly placeDep ROOT format@0.2.2 OK for: fault@1.0.4 want: ^0.2.0
+80 silly placeDep ROOT @types/hast@3.0.5 OK for: refractor@5.0.0 want: ^3.0.0
+81 silly placeDep ROOT @types/prismjs@1.26.6 OK for: refractor@5.0.0 want: ^1.0.0
+82 silly placeDep ROOT hastscript@9.0.1 OK for: refractor@5.0.0 want: ^9.0.0
+83 silly placeDep ROOT parse-entities@4.0.2 OK for: refractor@5.0.0 want: ^4.0.0
+84 silly fetch manifest @types/unist@*
+85 silly packumentCache full:https://registry.npmjs.org/@types%2funist cache-miss
+86 silly fetch manifest comma-separated-tokens@^2.0.0
+87 silly packumentCache full:https://registry.npmjs.org/comma-separated-tokens cache-miss
+88 silly fetch manifest hast-util-parse-selector@^4.0.0
+89 silly packumentCache full:https://registry.npmjs.org/hast-util-parse-selector cache-miss
+90 silly fetch manifest property-information@^7.0.0
+91 silly packumentCache full:https://registry.npmjs.org/property-information cache-miss
+92 silly fetch manifest space-separated-tokens@^2.0.0
+93 silly packumentCache full:https://registry.npmjs.org/space-separated-tokens cache-miss
+94 silly fetch manifest @types/unist@^2.0.0
+95 silly packumentCache full:https://registry.npmjs.org/@types%2funist cache-miss
+96 silly fetch manifest character-entities-legacy@^3.0.0
+97 silly packumentCache full:https://registry.npmjs.org/character-entities-legacy cache-miss
+98 http fetch GET 200 https://registry.npmjs.org/@types%2funist 71ms (cache miss)
+99 silly packumentCache full:https://registry.npmjs.org/@types%2funist set size:undefined disposed:false
+100 silly fetch manifest character-reference-invalid@^2.0.0
+101 silly packumentCache full:https://registry.npmjs.org/character-reference-invalid cache-miss
+102 http fetch GET 200 https://registry.npmjs.org/comma-separated-tokens 73ms (cache miss)
+103 silly packumentCache full:https://registry.npmjs.org/comma-separated-tokens set size:undefined disposed:false
+104 silly fetch manifest decode-named-character-reference@^1.0.0
+105 silly packumentCache full:https://registry.npmjs.org/decode-named-character-reference cache-miss
+106 http fetch GET 200 https://registry.npmjs.org/space-separated-tokens 75ms (cache miss)
+107 silly packumentCache full:https://registry.npmjs.org/space-separated-tokens set size:undefined disposed:false
+108 silly fetch manifest is-alphanumerical@^2.0.0
+109 silly packumentCache full:https://registry.npmjs.org/is-alphanumerical cache-miss
+110 http fetch GET 200 https://registry.npmjs.org/@types%2funist 89ms (cache miss)
+111 silly packumentCache full:https://registry.npmjs.org/@types%2funist set size:undefined disposed:false
+112 silly fetch manifest is-decimal@^2.0.0
+113 silly packumentCache full:https://registry.npmjs.org/is-decimal cache-miss
+114 http fetch GET 200 https://registry.npmjs.org/hast-util-parse-selector 92ms (cache miss)
+115 silly packumentCache full:https://registry.npmjs.org/hast-util-parse-selector set size:undefined disposed:false
+116 silly fetch manifest is-hexadecimal@^2.0.0
+117 silly packumentCache full:https://registry.npmjs.org/is-hexadecimal cache-miss
+118 http fetch GET 200 https://registry.npmjs.org/property-information 108ms (cache miss)
+119 silly packumentCache full:https://registry.npmjs.org/property-information set size:undefined disposed:false
+120 http fetch GET 200 https://registry.npmjs.org/character-reference-invalid 63ms (cache miss)
+121 silly packumentCache full:https://registry.npmjs.org/character-reference-invalid set size:undefined disposed:false
+122 http fetch GET 200 https://registry.npmjs.org/is-alphanumerical 60ms (cache miss)
+123 silly packumentCache full:https://registry.npmjs.org/is-alphanumerical set size:undefined disposed:false
+124 http fetch GET 200 https://registry.npmjs.org/is-hexadecimal 69ms (cache miss)
+125 silly packumentCache full:https://registry.npmjs.org/is-hexadecimal set size:undefined disposed:false
+126 http fetch GET 200 https://registry.npmjs.org/is-decimal 72ms (cache miss)
+127 silly packumentCache full:https://registry.npmjs.org/is-decimal set size:undefined disposed:false
+128 http fetch GET 200 https://registry.npmjs.org/decode-named-character-reference 102ms (cache miss)
+129 silly packumentCache full:https://registry.npmjs.org/decode-named-character-reference set size:undefined disposed:false
+130 http fetch GET 200 https://registry.npmjs.org/character-entities-legacy 185ms (cache miss)
+131 silly packumentCache full:https://registry.npmjs.org/character-entities-legacy set size:undefined disposed:false
+132 silly placeDep ROOT @types/unist@3.0.3 OK for: @types/hast@3.0.5 want: *
+133 silly placeDep ROOT comma-separated-tokens@2.0.3 OK for: hastscript@9.0.1 want: ^2.0.0
+134 silly placeDep ROOT hast-util-parse-selector@4.0.0 OK for: hastscript@9.0.1 want: ^4.0.0
+135 silly placeDep ROOT property-information@7.2.0 OK for: hastscript@9.0.1 want: ^7.0.0
+136 silly placeDep ROOT space-separated-tokens@2.0.2 OK for: hastscript@9.0.1 want: ^2.0.0
+137 silly placeDep node_modules/parse-entities @types/unist@2.0.11 OK for: parse-entities@4.0.2 want: ^2.0.0
+138 silly placeDep ROOT character-entities-legacy@3.0.0 OK for: parse-entities@4.0.2 want: ^3.0.0
+139 silly placeDep ROOT character-reference-invalid@2.0.1 OK for: parse-entities@4.0.2 want: ^2.0.0
+140 silly placeDep ROOT decode-named-character-reference@1.3.0 OK for: parse-entities@4.0.2 want: ^1.0.0
+141 silly placeDep ROOT is-alphanumerical@2.0.1 OK for: parse-entities@4.0.2 want: ^2.0.0
+142 silly placeDep ROOT is-decimal@2.0.1 OK for: parse-entities@4.0.2 want: ^2.0.0
+143 silly placeDep ROOT is-hexadecimal@2.0.1 OK for: parse-entities@4.0.2 want: ^2.0.0
+144 silly fetch manifest character-entities@^2.0.0
+145 silly packumentCache full:https://registry.npmjs.org/character-entities cache-miss
+146 silly fetch manifest is-alphabetical@^2.0.0
+147 silly packumentCache full:https://registry.npmjs.org/is-alphabetical cache-miss
+148 http fetch GET 200 https://registry.npmjs.org/is-alphabetical 58ms (cache miss)
+149 silly packumentCache full:https://registry.npmjs.org/is-alphabetical set size:undefined disposed:false
+150 http fetch GET 200 https://registry.npmjs.org/character-entities 102ms (cache miss)
+151 silly packumentCache full:https://registry.npmjs.org/character-entities set size:undefined disposed:false
+152 silly placeDep ROOT character-entities@2.0.2 OK for: decode-named-character-reference@1.3.0 want: ^2.0.0
+153 silly placeDep ROOT is-alphabetical@2.0.1 OK for: is-alphanumerical@2.0.1 want: ^2.0.0
+154 silly reify moves {}
+155 silly audit bulk request {
+155 silly audit   '@alloc/quick-lru': [ '5.3.0' ],
+155 silly audit   '@emnapi/core': [ '1.10.0' ],
+155 silly audit   '@emnapi/runtime': [ '1.10.0' ],
+155 silly audit   '@emnapi/wasi-threads': [ '1.2.1' ],
+155 silly audit   '@eslint-community/eslint-utils': [ '4.10.1' ],
+155 silly audit   '@eslint-community/regexpp': [ '4.12.2' ],
+155 silly audit   '@eslint/eslintrc': [ '2.1.4' ],
+155 silly audit   '@eslint/js': [ '8.57.1' ],
+155 silly audit   '@humanwhocodes/config-array': [ '0.13.0' ],
+155 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+155 silly audit   '@humanwhocodes/object-schema': [ '2.0.3' ],
+155 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+155 silly audit   'ansi-regex': [ '6.4.0', '5.0.1' ],
+155 silly audit   'strip-ansi': [ '7.2.0', '6.0.1' ],
+155 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+155 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+155 silly audit   '@jridgewell/sourcemap-codec': [ '1.6.0' ],
+155 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+155 silly audit   '@napi-rs/wasm-runtime': [ '1.2.5' ],
+155 silly audit   '@next/env': [ '14.1.3' ],
+155 silly audit   '@next/eslint-plugin-next': [ '14.1.3' ],
+155 silly audit   '@next/swc-darwin-arm64': [ '14.1.3' ],
+155 silly audit   '@next/swc-darwin-x64': [ '14.1.3' ],
+155 silly audit   '@next/swc-linux-arm64-gnu': [ '14.1.3' ],
+155 silly audit   '@next/swc-linux-arm64-musl': [ '14.1.3' ],
+155 silly audit   '@next/swc-linux-x64-gnu': [ '14.1.3' ],
+155 silly audit   '@next/swc-linux-x64-musl': [ '14.1.3' ],
+155 silly audit   '@next/swc-win32-arm64-msvc': [ '14.1.3' ],
+155 silly audit   '@next/swc-win32-ia32-msvc': [ '14.1.3' ],
+155 silly audit   '@next/swc-win32-x64-msvc': [ '14.1.3' ],
+155 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+155 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+155 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+155 silly audit   '@nolyfill/is-core-module': [ '1.0.39' ],
+155 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
+155 silly audit   '@rtsao/scc': [ '1.1.0' ],
+155 silly audit   '@rushstack/eslint-patch': [ '1.16.1' ],
+155 silly audit   '@swc/helpers': [ '0.5.2' ],
+155 silly audit   '@tybys/wasm-util': [ '0.10.4' ],
+155 silly audit   '@types/json5': [ '0.0.29' ],
+155 silly audit   '@types/node': [ '20.19.43' ],
+155 silly audit   '@types/prop-types': [ '15.7.15' ],
+155 silly audit   '@types/react': [ '18.3.31' ],
+155 silly audit   '@types/react-dom': [ '18.3.7' ],
+155 silly audit   '@typescript-eslint/parser': [ '6.21.0' ],
+155 silly audit   '@typescript-eslint/scope-manager': [ '6.21.0' ],
+155 silly audit   '@typescript-eslint/types': [ '6.21.0' ],
+155 silly audit   '@typescript-eslint/typescript-estree': [ '6.21.0' ],
+155 silly audit   'brace-expansion': [ '2.1.7', '1.1.21' ],
+155 silly audit   minimatch: [ '9.0.3', '9.0.9', '3.1.5' ],
+155 silly audit   '@typescript-eslint/visitor-keys': [ '6.21.0' ],
+155 silly audit   '@ungap/structured-clone': [ '1.4.0' ],
+155 silly audit   '@unrs/resolver-binding-android-arm-eabi': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-android-arm64': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-darwin-arm64': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-darwin-x64': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-freebsd-x64': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-arm-gnueabihf': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-arm-musleabihf': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-arm64-gnu': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-arm64-musl': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-loong64-gnu': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-loong64-musl': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-ppc64-gnu': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-riscv64-gnu': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-riscv64-musl': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-s390x-gnu': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-x64-gnu': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-linux-x64-musl': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-openharmony-arm64': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-wasm32-wasi': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-win32-arm64-msvc': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-win32-ia32-msvc': [ '1.12.2' ],
+155 silly audit   '@unrs/resolver-binding-win32-x64-msvc': [ '1.12.2' ],
+155 silly audit   acorn: [ '8.19.0' ],
+155 silly audit   'acorn-jsx': [ '5.3.2' ],
+155 silly audit   ajv: [ '6.15.0' ],
+155 silly audit   'ansi-styles': [ '4.3.0', '6.2.3' ],
+155 silly audit   'any-promise': [ '1.3.0' ],
+155 silly audit   anymatch: [ '3.1.3' ],
+155 silly audit   arg: [ '5.0.2' ],
+155 silly audit   argparse: [ '2.0.1' ],
+155 silly audit   'aria-query': [ '5.3.2' ],
+155 silly audit   'array-buffer-byte-length': [ '1.0.2' ],
+155 silly audit   'array-includes': [ '3.2.0' ],
+155 silly audit   'array-union': [ '2.1.0' ],
+155 silly audit   'array.prototype.findlast': [ '1.2.5' ],
+155 silly audit   'array.prototype.findlastindex': [ '1.2.6' ],
+155 silly audit   'array.prototype.flat': [ '1.3.3' ],
+155 silly audit   'array.prototype.flatmap': [ '1.3.3' ],
+155 silly audit   'array.prototype.tosorted': [ '1.1.4' ],
+155 silly audit   'arraybuffer.prototype.slice': [ '1.0.4' ],
+155 silly audit   'ast-types-flow': [ '0.0.8' ],
+155 silly audit   'async-function': [ '1.0.0' ],
+155 silly audit   autoprefixer: [ '10.6.1' ],
+155 silly audit   'available-typed-arrays': [ '1.0.7' ],
+155 silly audit   'axe-core': [ '4.13.0' ],
+155 silly audit   'axobject-query': [ '4.1.0' ],
+155 silly audit   'balanced-match': [ '1.0.2' ],
+155 silly audit   'baseline-browser-mapping': [ '2.11.27' ],
+155 silly audit   'binary-extensions': [ '2.3.0' ],
+155 silly audit   braces: [ '3.0.3' ],
+155 silly audit   browserslist: [ '4.29.3' ],
+155 silly audit   busboy: [ '1.6.0' ],
+155 silly audit   'call-bind': [ '1.0.9' ],
+155 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+155 silly audit   'call-bound': [ '1.0.4' ],
+155 silly audit   callsites: [ '3.1.0' ],
+155 silly audit   'camelcase-css': [ '2.0.1' ],
+155 silly audit   'caniuse-lite': [ '1.0.30001814' ],
+155 silly audit   chalk: [ '4.1.2' ],
+155 silly audit   chokidar: [ '3.6.0' ],
+155 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+155 silly audit   'client-only': [ '0.0.1' ],
+155 silly audit   clsx: [ '2.1.1' ],
+155 silly audit   'color-convert': [ '2.0.1' ],
+155 silly audit   'color-name': [ '1.1.4' ],
+155 silly audit   commander: [ '4.1.1' ],
+155 silly audit   'concat-map': [ '0.0.1' ],
+155 silly audit   'cross-spawn': [ '7.0.6' ],
+155 silly audit   cssesc: [ '3.0.0' ],
+155 silly audit   csstype: [ '3.2.3' ],
+155 silly audit   'damerau-levenshtein': [ '1.0.8' ],
+155 silly audit   'data-view-buffer': [ '1.0.2' ],
+155 silly audit   'data-view-byte-length': [ '1.0.2' ],
+155 silly audit   'data-view-byte-offset': [ '1.0.1' ],
+155 silly audit   debug: [ '4.4.3', '3.2.7' ],
+155 silly audit   'deep-is': [ '0.1.4' ],
+155 silly audit   'define-data-property': [ '1.1.4' ],
+155 silly audit   'define-properties': [ '1.2.1' ],
+155 silly audit   didyoumean: [ '1.2.2' ],
+155 silly audit   'dir-glob': [ '3.0.1' ],
+155 silly audit   dlv: [ '1.1.3' ],
+155 silly audit   doctrine: [ '3.0.0', '2.1.0' ],
+155 silly audit   'dunder-proto': [ '1.0.1' ],
+155 silly audit   eastasianwidth: [ '0.2.0' ],
+155 silly audit   'electron-to-chromium': [ '1.5.444' ],
+155 silly audit   'emoji-regex': [ '9.2.2', '8.0.0' ],
+155 silly audit   'es-abstract': [ '1.24.2' ],
+155 silly audit   'es-abstract-get': [ '1.0.0' ],
+155 silly audit   'es-define-property': [ '1.0.1' ],
+155 silly audit   'es-errors': [ '1.3.0' ],
+155 silly audit   'es-iterator-helpers': [ '1.4.0' ],
+155 silly audit   'es-object-atoms': [ '1.1.2' ],
+155 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+155 silly audit   'es-shim-unscopables': [ '1.1.0' ],
+155 silly audit   'es-to-primitive': [ '1.3.4' ],
+155 silly audit   escalade: [ '3.2.0' ],
+155 silly audit   'escape-string-regexp': [ '4.0.0' ],
+155 silly audit   eslint: [ '8.57.1' ],
+155 silly audit   'eslint-config-next': [ '14.1.3' ],
+155 silly audit   'eslint-import-resolver-node': [ '0.3.10' ],
+155 silly audit   'eslint-import-resolver-typescript': [ '3.10.1' ],
+155 silly audit   'eslint-module-utils': [ '2.14.0' ],
+155 silly audit   'eslint-plugin-import': [ '2.32.0' ],
+155 silly audit   semver: [ '6.3.1', '7.8.5' ],
+155 silly audit   'eslint-plugin-jsx-a11y': [ '6.10.2' ],
+155 silly audit   'eslint-plugin-react': [ '7.37.5' ],
+155 silly audit   'eslint-plugin-react-hooks': [ '5.0.0-canary-7118f5dd7-20230705' ],
+155 silly audit   'eslint-scope': [ '7.2.2' ],
+155 silly audit   'eslint-visitor-keys': [ '3.4.3' ],
+155 silly audit   espree: [ '9.6.1' ],
+155 silly audit   esquery: [ '1.7.0' ],
+155 silly audit   esrecurse: [ '4.3.0' ],
+155 silly audit   estraverse: [ '5.3.0' ],
+155 silly audit   esutils: [ '2.0.3' ],
+155 silly audit   'fast-deep-equal': [ '3.1.3' ],
+155 silly audit   'fast-glob': [ '3.3.3' ],
+155 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+155 silly audit   'fast-levenshtein': [ '2.0.6' ],
+155 silly audit   fastq: [ '1.20.3' ],
+155 silly audit   'file-entry-cache': [ '6.0.1' ],
+155 silly audit   'fill-range': [ '7.1.1' ],
+155 silly audit   'find-up': [ '5.0.0' ],
+155 silly audit   'flat-cache': [ '3.2.0' ],
+155 silly audit   flatted: [ '3.4.4' ],
+155 silly audit   'for-each': [ '0.3.5' ],
+155 silly audit   'foreground-child': [ '3.3.1' ],
+155 silly audit   'fraction.js': [ '5.3.4' ],
+155 silly audit   'framer-motion': [ '11.18.2' ],
+155 silly audit   'fs.realpath': [ '1.0.0' ],
+155 silly audit   fsevents: [ '2.3.3' ],
+155 silly audit   'function-bind': [ '1.1.2' ],
+155 silly audit   'function.prototype.name': [ '1.2.0' ],
+155 silly audit   'functions-have-names': [ '1.2.3' ],
+155 silly audit   'generator-function': [ '2.0.1' ],
+155 silly audit   'get-intrinsic': [ '1.3.0' ],
+155 silly audit   'get-proto': [ '1.0.1' ],
+155 silly audit   'get-symbol-description': [ '1.1.0' ],
+155 silly audit   'get-tsconfig': [ '4.14.3' ],
+155 silly audit   glob: [ '10.3.10', '7.2.3' ],
+155 silly audit   globals: [ '13.24.0' ],
+155 silly audit   globalthis: [ '1.0.4' ],
+155 silly audit   globby: [ '11.1.0' ],
+155 silly audit   gopd: [ '1.2.0' ],
+155 silly audit   'graceful-fs': [ '4.2.11' ],
+155 silly audit   graphemer: [ '1.4.0' ],
+155 silly audit   'has-bigints': [ '1.1.0' ],
+155 silly audit   'has-flag': [ '4.0.0' ],
+155 silly audit   'has-property-descriptors': [ '1.0.2' ],
+155 silly audit   'has-proto': [ '1.2.0' ],
+155 silly audit   'has-symbols': [ '1.1.0' ],
+155 silly audit   'has-tostringtag': [ '1.0.2' ],
+155 silly audit   hasown: [ '2.0.4' ],
+155 silly audit   ignore: [ '5.3.2' ],
+155 silly audit   'import-fresh': [ '3.3.1' ],
+155 silly audit   imurmurhash: [ '0.1.4' ],
+155 silly audit   inflight: [ '1.0.6' ],
+155 silly audit   inherits: [ '2.0.4' ],
+155 silly audit   'internal-slot': [ '1.1.0' ],
+155 silly audit   'is-array-buffer': [ '3.0.5' ],
+155 silly audit   'is-async-function': [ '2.1.1' ],
+155 silly audit   'is-bigint': [ '1.1.0' ],
+155 silly audit   'is-binary-path': [ '2.1.0' ],
+155 silly audit   'is-boolean-object': [ '1.2.2' ],
+155 silly audit   'is-bun-module': [ '2.0.0' ],
+155 silly audit   'is-callable': [ '1.2.7' ],
+155 silly audit   'is-core-module': [ '2.17.0' ],
+155 silly audit   'is-data-view': [ '1.0.2' ],
+155 silly audit   'is-date-object': [ '1.1.0' ],
+155 silly audit   'is-document.all': [ '1.0.0' ],
+155 silly audit   'is-extglob': [ '2.1.1' ],
+155 silly audit   'is-finalizationregistry': [ '1.1.1' ],
+155 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+155 silly audit   'is-generator-function': [ '1.1.2' ],
+155 silly audit   'is-glob': [ '4.0.3' ],
+155 silly audit   'is-map': [ '2.0.3' ],
+155 silly audit   'is-negative-zero': [ '2.0.3' ],
+155 silly audit   'is-number': [ '7.0.0' ],
+155 silly audit   'is-number-object': [ '1.1.1' ],
+155 silly audit   'is-path-inside': [ '3.0.3' ],
+155 silly audit   'is-regex': [ '1.2.1' ],
+155 silly audit   'is-set': [ '2.0.3' ],
+155 silly audit   'is-shared-array-buffer': [ '1.0.4' ],
+155 silly audit   'is-string': [ '1.1.1' ],
+155 silly audit   'is-symbol': [ '1.1.1' ],
+155 silly audit   'is-typed-array': [ '1.1.15' ],
+155 silly audit   'is-weakmap': [ '2.0.2' ],
+155 silly audit   'is-weakref': [ '1.1.1' ],
+155 silly audit   'is-weakset': [ '2.0.4' ],
+155 silly audit   isarray: [ '2.0.5' ],
+155 silly audit   isexe: [ '2.0.0' ],
+155 silly audit   'iterator.prototype': [ '1.1.5' ],
+155 silly audit   jackspeak: [ '2.3.6' ],
+155 silly audit   jiti: [ '1.21.7' ],
+155 silly audit   'js-tokens': [ '4.0.0' ],
+155 silly audit   'js-yaml': [ '4.3.2' ],
+155 silly audit   'json-buffer': [ '3.0.1' ],
+155 silly audit   'json-schema-traverse': [ '0.4.1' ],
+155 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+155 silly audit   json5: [ '1.0.2' ],
+155 silly audit   'jsx-ast-utils': [ '3.3.5' ],
+155 silly audit   keyv: [ '4.5.4' ],
+155 silly audit   'language-subtag-registry': [ '0.3.23' ],
+155 silly audit   'language-tags': [ '1.0.9' ],
+155 silly audit   levn: [ '0.4.1' ],
+155 silly audit   lilconfig: [ '3.1.3' ],
+155 silly audit   'lines-and-columns': [ '1.2.4' ],
+155 silly audit   'locate-path': [ '6.0.0' ],
+155 silly audit   'lodash.merge': [ '4.6.2' ],
+155 silly audit   'loose-envify': [ '1.4.0' ],
+155 silly audit   'lru-cache': [ '10.4.3' ],
+155 silly audit   'lucide-react': [ '0.359.0' ],
+155 silly audit   'math-intrinsics': [ '1.1.0' ],
+155 silly audit   merge2: [ '1.4.1' ],
+155 silly audit   micromatch: [ '4.0.8' ],
+155 silly audit   minimist: [ '1.2.8' ],
+155 silly audit   minipass: [ '7.1.3' ],
+155 silly audit   'motion-dom': [ '11.18.1' ],
+155 silly audit   'motion-utils': [ '11.18.1' ],
+155 silly audit   ms: [ '2.1.3' ],
+155 silly audit   mz: [ '2.7.0' ],
+155 silly audit   nanoid: [ '3.3.20' ],
+155 silly audit   'napi-postinstall': [ '0.3.4' ],
+155 silly audit   'natural-compare': [ '1.4.0' ],
+155 silly audit   next: [ '14.1.3' ],
+155 silly audit   postcss: [ '8.4.31', '8.5.29' ],
+155 silly audit   'node-exports-info': [ '1.6.2' ],
+155 silly audit   'node-releases': [ '2.0.57' ],
+155 silly audit   'normalize-path': [ '3.0.0' ],
+155 silly audit   'object-assign': [ '4.1.1' ],
+155 silly audit   'object-hash': [ '3.0.0' ],
+155 silly audit   'object-inspect': [ '1.13.4' ],
+155 silly audit   'object-keys': [ '1.1.1' ],
+155 silly audit   'object.assign': [ '4.1.7' ],
+155 silly audit   'object.entries': [ '1.1.9' ],
+155 silly audit   'object.fromentries': [ '2.0.8' ],
+155 silly audit   'object.groupby': [ '1.0.3' ],
+155 silly audit   'object.values': [ '1.2.1' ],
+155 silly audit   once: [ '1.4.0' ],
+155 silly audit   optionator: [ '0.9.4' ],
+155 silly audit   'own-keys': [ '1.0.2' ],
+155 silly audit   'p-limit': [ '3.1.0' ],
+155 silly audit   'p-locate': [ '5.0.0' ],
+155 silly audit   'parent-module': [ '1.0.1' ],
+155 silly audit   'path-exists': [ '4.0.0' ],
+155 silly audit   'path-is-absolute': [ '1.0.1' ],
+155 silly audit   'path-key': [ '3.1.1' ],
+155 silly audit   'path-parse': [ '1.0.7' ],
+155 silly audit   'path-scurry': [ '1.11.1' ],
+155 silly audit   'path-type': [ '4.0.0' ],
+155 silly audit   picocolors: [ '1.1.1' ],
+155 silly audit   picomatch: [ '2.3.2', '4.0.7' ],
+155 silly audit   pirates: [ '4.0.7' ],
+155 silly audit   'possible-typed-array-names': [ '1.1.0' ],
+155 silly audit   'postcss-import': [ '15.1.0' ],
+155 silly audit   resolve: [ '1.22.12', '2.0.0-next.7' ],
+155 silly audit   'postcss-js': [ '4.1.0' ],
+155 silly audit   'postcss-load-config': [ '6.0.1' ],
+155 silly audit   'postcss-nested': [ '6.2.0' ],
+155 silly audit   'postcss-selector-parser': [ '6.1.4' ],
+155 silly audit   'postcss-value-parser': [ '4.2.0' ],
+155 silly audit   'prelude-ls': [ '1.2.1' ],
+155 silly audit   'prop-types': [ '15.8.1' ],
+155 silly audit   punycode: [ '2.3.1' ],
+155 silly audit   'queue-microtask': [ '1.2.3' ],
+155 silly audit   react: [ '18.3.1' ],
+155 silly audit   'react-dom': [ '18.3.1' ],
+155 silly audit   'react-is': [ '16.13.1' ],
+155 silly audit   'react-zoom-pan-pinch': [ '4.2.0' ],
+155 silly audit   'read-cache': [ '1.0.2' ],
+155 silly audit   readdirp: [ '3.6.0' ],
+155 silly audit   'reflect.getprototypeof': [ '1.0.10' ],
+155 silly audit   'regexp.prototype.flags': [ '1.5.4' ],
+155 silly audit   'resolve-from': [ '4.0.0' ],
+155 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+155 silly audit   reusify: [ '1.1.0' ],
+155 silly audit   rimraf: [ '3.0.2' ],
+155 silly audit   'run-parallel': [ '1.2.0' ],
+155 silly audit   'safe-array-concat': [ '1.1.4' ],
+155 silly audit   'safe-push-apply': [ '1.0.0' ],
+155 silly audit   'safe-regex-test': [ '1.1.0' ],
+155 silly audit   scheduler: [ '0.23.2' ],
+155 silly audit   'set-function-length': [ '1.2.2' ],
+155 silly audit   'set-function-name': [ '2.0.2' ],
+155 silly audit   'set-proto': [ '1.0.0' ],
+155 silly audit   'shebang-command': [ '2.0.0' ],
+155 silly audit   'shebang-regex': [ '3.0.0' ],
+155 silly audit   'side-channel': [ '1.1.1' ],
+155 silly audit   'side-channel-list': [ '1.0.1' ],
+155 silly audit   'side-channel-map': [ '1.0.1' ],
+155 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+155 silly audit   'signal-exit': [ '4.1.0' ],
+155 silly audit   slash: [ '3.0.0' ],
+155 silly audit   'source-map-js': [ '1.2.2' ],
+155 silly audit   'stable-hash': [ '0.0.5' ],
+155 silly audit   'stop-iteration-iterator': [ '1.1.0' ],
+155 silly audit   streamsearch: [ '1.1.0' ],
+155 silly audit   'string-width': [ '5.1.2', '4.2.3' ],
+155 silly audit   'string.prototype.includes': [ '2.0.1' ],
+155 silly audit   'string.prototype.matchall': [ '4.1.0' ],
+155 silly audit   'string.prototype.repeat': [ '1.0.0' ],
+155 silly audit   'string.prototype.trim': [ '1.2.11' ],
+155 silly audit   'string.prototype.trimend': [ '1.0.10' ],
+155 silly audit   'string.prototype.trimstart': [ '1.0.8' ],
+155 silly audit   'strip-bom': [ '3.0.0' ],
+155 silly audit   'strip-json-comments': [ '3.1.1' ],
+155 silly audit   'styled-jsx': [ '5.1.1' ],
+155 silly audit   sucrase: [ '3.35.1' ],
+155 silly audit   'supports-color': [ '7.2.0' ],
+155 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+155 silly audit   'tailwind-merge': [ '2.6.1' ],
+155 silly audit   tailwindcss: [ '3.4.19' ],
+155 silly audit   'text-table': [ '0.2.0' ],
+155 silly audit   thenify: [ '3.3.1' ],
+155 silly audit   'thenify-all': [ '1.6.0' ],
+155 silly audit   tinyglobby: [ '0.2.17' ],
+155 silly audit   fdir: [ '6.5.0' ],
+155 silly audit   'to-regex-range': [ '5.0.1' ],
+155 silly audit   'ts-api-utils': [ '1.4.3' ],
+155 silly audit   'ts-interface-checker': [ '0.1.13' ],
+155 silly audit   'tsconfig-paths': [ '3.15.0' ],
+155 silly audit   tslib: [ '2.8.1' ],
+155 silly audit   'type-check': [ '0.4.0' ],
+155 silly audit   'type-fest': [ '0.20.2' ],
+155 silly audit   'typed-array-buffer': [ '1.0.3' ],
+155 silly audit   'typed-array-byte-length': [ '1.0.3' ],
+155 silly audit   'typed-array-byte-offset': [ '1.0.5' ],
+155 silly audit   'typed-array-length': [ '1.0.8' ],
+155 silly audit   typescript: [ '5.9.3' ],
+155 silly audit   'unbox-primitive': [ '1.1.0' ],
+155 silly audit   'undici-types': [ '6.21.0' ],
+155 silly audit   'unrs-resolver': [ '1.12.2' ],
+155 silly audit   'update-browserslist-db': [ '1.3.3' ],
+155 silly audit   'uri-js': [ '4.4.1' ],
+155 silly audit   'util-deprecate': [ '1.0.2' ],
+155 silly audit   which: [ '2.0.2' ],
+155 silly audit   'which-boxed-primitive': [ '1.1.1' ],
+155 silly audit   'which-builtin-type': [ '1.2.1' ],
+155 silly audit   'which-collection': [ '1.0.2' ],
+155 silly audit   'which-typed-array': [ '1.1.24' ],
+155 silly audit   'word-wrap': [ '1.2.5' ],
+155 silly audit   'wrap-ansi': [ '8.1.0', '7.0.0' ],
+155 silly audit   wrappy: [ '1.0.2' ],
+155 silly audit   'yocto-queue': [ '0.1.0' ],
+155 silly audit   'react-syntax-highlighter': [ '16.1.1' ],
+155 silly audit   '@babel/runtime': [ '7.29.7' ],
+155 silly audit   'highlight.js': [ '10.7.3' ],
+155 silly audit   'highlightjs-vue': [ '1.0.0' ],
+155 silly audit   lowlight: [ '1.20.0' ],
+155 silly audit   prismjs: [ '1.30.0' ],
+155 silly audit   refractor: [ '5.0.0' ],
+155 silly audit   fault: [ '1.0.4' ],
+155 silly audit   format: [ '0.2.2' ],
+155 silly audit   '@types/hast': [ '3.0.5' ],
+155 silly audit   '@types/prismjs': [ '1.26.6' ],
+155 silly audit   hastscript: [ '9.0.1' ],
+155 silly audit   'parse-entities': [ '4.0.2' ],
+155 silly audit   '@types/unist': [ '3.0.3', '2.0.11' ],
+155 silly audit   'comma-separated-tokens': [ '2.0.3' ],
+155 silly audit   'hast-util-parse-selector': [ '4.0.0' ],
+155 silly audit   'property-information': [ '7.2.0' ],
+155 silly audit   'space-separated-tokens': [ '2.0.2' ],
+155 silly audit   'character-entities-legacy': [ '3.0.0' ],
+155 silly audit   'character-reference-invalid': [ '2.0.1' ],
+155 silly audit   'decode-named-character-reference': [ '1.3.0' ],
+155 silly audit   'is-alphanumerical': [ '2.0.1' ],
+155 silly audit   'is-decimal': [ '2.0.1' ],
+155 silly audit   'is-hexadecimal': [ '2.0.1' ],
+155 silly audit   'character-entities': [ '2.0.2' ],
+155 silly audit   'is-alphabetical': [ '2.0.1' ]
+155 silly audit }
+156 http cache is-alphabetical@https://registry.npmjs.org/is-alphabetical/-/is-alphabetical-2.0.1.tgz 0ms (cache hit)
+157 http cache character-entities@https://registry.npmjs.org/character-entities/-/character-entities-2.0.2.tgz 0ms (cache hit)
+158 http cache is-hexadecimal@https://registry.npmjs.org/is-hexadecimal/-/is-hexadecimal-2.0.1.tgz 0ms (cache hit)
+159 http cache decode-named-character-reference@https://registry.npmjs.org/decode-named-character-reference/-/decode-named-character-reference-1.3.0.tgz 0ms (cache hit)
+160 http cache character-reference-invalid@https://registry.npmjs.org/character-reference-invalid/-/character-reference-invalid-2.0.1.tgz 0ms (cache hit)
+161 http cache property-information@https://registry.npmjs.org/property-information/-/property-information-7.2.0.tgz 0ms (cache hit)
+162 http cache is-alphanumerical@https://registry.npmjs.org/is-alphanumerical/-/is-alphanumerical-2.0.1.tgz 0ms (cache hit)
+163 http cache character-entities-legacy@https://registry.npmjs.org/character-entities-legacy/-/character-entities-legacy-3.0.0.tgz 0ms (cache hit)
+164 http cache space-separated-tokens@https://registry.npmjs.org/space-separated-tokens/-/space-separated-tokens-2.0.2.tgz 0ms (cache hit)
+165 http cache is-decimal@https://registry.npmjs.org/is-decimal/-/is-decimal-2.0.1.tgz 0ms (cache hit)
+166 http cache comma-separated-tokens@https://registry.npmjs.org/comma-separated-tokens/-/comma-separated-tokens-2.0.3.tgz 0ms (cache hit)
+167 http cache hast-util-parse-selector@https://registry.npmjs.org/hast-util-parse-selector/-/hast-util-parse-selector-4.0.0.tgz 0ms (cache hit)
+168 http cache @types/unist@https://registry.npmjs.org/@types/unist/-/unist-3.0.3.tgz 0ms (cache hit)
+169 http cache hastscript@https://registry.npmjs.org/hastscript/-/hastscript-9.0.1.tgz 0ms (cache hit)
+170 http cache @types/prismjs@https://registry.npmjs.org/@types/prismjs/-/prismjs-1.26.6.tgz 0ms (cache hit)
+171 http cache @types/hast@https://registry.npmjs.org/@types/hast/-/hast-3.0.5.tgz 0ms (cache hit)
+172 http cache format@https://registry.npmjs.org/format/-/format-0.2.2.tgz 0ms (cache hit)
+173 http cache refractor@https://registry.npmjs.org/refractor/-/refractor-5.0.0.tgz 0ms (cache hit)
+174 http cache fault@https://registry.npmjs.org/fault/-/fault-1.0.4.tgz 0ms (cache hit)
+175 http cache prismjs@https://registry.npmjs.org/prismjs/-/prismjs-1.30.0.tgz 0ms (cache hit)
+176 http cache parse-entities@https://registry.npmjs.org/parse-entities/-/parse-entities-4.0.2.tgz 0ms (cache hit)
+177 http cache lowlight@https://registry.npmjs.org/lowlight/-/lowlight-1.20.0.tgz 0ms (cache hit)
+178 http cache highlightjs-vue@https://registry.npmjs.org/highlightjs-vue/-/highlightjs-vue-1.0.0.tgz 0ms (cache hit)
+179 http cache @babel/runtime@https://registry.npmjs.org/@babel/runtime/-/runtime-7.29.7.tgz 0ms (cache hit)
+180 http cache react-syntax-highlighter@https://registry.npmjs.org/react-syntax-highlighter/-/react-syntax-highlighter-16.1.1.tgz 0ms (cache hit)
+181 silly tarball no local data for is-alphabetical@https://registry.npmjs.org/is-alphabetical/-/is-alphabetical-2.0.1.tgz. Extracting by manifest.
+182 silly tarball no local data for character-entities@https://registry.npmjs.org/character-entities/-/character-entities-2.0.2.tgz. Extracting by manifest.
+183 silly tarball no local data for is-hexadecimal@https://registry.npmjs.org/is-hexadecimal/-/is-hexadecimal-2.0.1.tgz. Extracting by manifest.
+184 silly tarball no local data for decode-named-character-reference@https://registry.npmjs.org/decode-named-character-reference/-/decode-named-character-reference-1.3.0.tgz. Extracting by manifest.
+185 silly tarball no local data for character-reference-invalid@https://registry.npmjs.org/character-reference-invalid/-/character-reference-invalid-2.0.1.tgz. Extracting by manifest.
+186 silly tarball no local data for property-information@https://registry.npmjs.org/property-information/-/property-information-7.2.0.tgz. Extracting by manifest.
+187 silly tarball no local data for is-alphanumerical@https://registry.npmjs.org/is-alphanumerical/-/is-alphanumerical-2.0.1.tgz. Extracting by manifest.
+188 silly tarball no local data for character-entities-legacy@https://registry.npmjs.org/character-entities-legacy/-/character-entities-legacy-3.0.0.tgz. Extracting by manifest.
+189 silly tarball no local data for space-separated-tokens@https://registry.npmjs.org/space-separated-tokens/-/space-separated-tokens-2.0.2.tgz. Extracting by manifest.
+190 silly tarball no local data for is-decimal@https://registry.npmjs.org/is-decimal/-/is-decimal-2.0.1.tgz. Extracting by manifest.
+191 silly tarball no local data for comma-separated-tokens@https://registry.npmjs.org/comma-separated-tokens/-/comma-separated-tokens-2.0.3.tgz. Extracting by manifest.
+192 silly tarball no local data for hast-util-parse-selector@https://registry.npmjs.org/hast-util-parse-selector/-/hast-util-parse-selector-4.0.0.tgz. Extracting by manifest.
+193 silly tarball no local data for @types/unist@https://registry.npmjs.org/@types/unist/-/unist-3.0.3.tgz. Extracting by manifest.
+194 silly tarball no local data for hastscript@https://registry.npmjs.org/hastscript/-/hastscript-9.0.1.tgz. Extracting by manifest.
+195 silly tarball no local data for @types/prismjs@https://registry.npmjs.org/@types/prismjs/-/prismjs-1.26.6.tgz. Extracting by manifest.
+196 silly tarball no local data for @types/hast@https://registry.npmjs.org/@types/hast/-/hast-3.0.5.tgz. Extracting by manifest.
+197 http cache highlight.js@https://registry.npmjs.org/highlight.js/-/highlight.js-10.7.3.tgz 0ms (cache hit)
+198 http cache @types/unist@https://registry.npmjs.org/@types/unist/-/unist-2.0.11.tgz 0ms (cache hit)
+199 silly tarball no local data for format@https://registry.npmjs.org/format/-/format-0.2.2.tgz. Extracting by manifest.
+200 silly tarball no local data for refractor@https://registry.npmjs.org/refractor/-/refractor-5.0.0.tgz. Extracting by manifest.
+201 silly tarball no local data for fault@https://registry.npmjs.org/fault/-/fault-1.0.4.tgz. Extracting by manifest.
+202 silly tarball no local data for prismjs@https://registry.npmjs.org/prismjs/-/prismjs-1.30.0.tgz. Extracting by manifest.
+203 silly tarball no local data for parse-entities@https://registry.npmjs.org/parse-entities/-/parse-entities-4.0.2.tgz. Extracting by manifest.
+204 silly tarball no local data for lowlight@https://registry.npmjs.org/lowlight/-/lowlight-1.20.0.tgz. Extracting by manifest.
+205 silly tarball no local data for highlightjs-vue@https://registry.npmjs.org/highlightjs-vue/-/highlightjs-vue-1.0.0.tgz. Extracting by manifest.
+206 silly tarball no local data for @babel/runtime@https://registry.npmjs.org/@babel/runtime/-/runtime-7.29.7.tgz. Extracting by manifest.
+207 silly tarball no local data for react-syntax-highlighter@https://registry.npmjs.org/react-syntax-highlighter/-/react-syntax-highlighter-16.1.1.tgz. Extracting by manifest.
+208 silly tarball no local data for highlight.js@https://registry.npmjs.org/highlight.js/-/highlight.js-10.7.3.tgz. Extracting by manifest.
+209 silly tarball no local data for @types/unist@https://registry.npmjs.org/@types/unist/-/unist-2.0.11.tgz. Extracting by manifest.
+210 http fetch GET 200 https://registry.npmjs.org/is-hexadecimal/-/is-hexadecimal-2.0.1.tgz 71ms (cache miss)
+211 http fetch GET 200 https://registry.npmjs.org/character-reference-invalid/-/character-reference-invalid-2.0.1.tgz 72ms (cache miss)
+212 http fetch GET 200 https://registry.npmjs.org/decode-named-character-reference/-/decode-named-character-reference-1.3.0.tgz 74ms (cache miss)
+213 http fetch GET 200 https://registry.npmjs.org/is-alphabetical/-/is-alphabetical-2.0.1.tgz 74ms (cache miss)
+214 http fetch GET 200 https://registry.npmjs.org/character-entities/-/character-entities-2.0.2.tgz 76ms (cache miss)
+215 http fetch GET 200 https://registry.npmjs.org/property-information/-/property-information-7.2.0.tgz 93ms (cache miss)
+216 http fetch GET 200 https://registry.npmjs.org/@types/prismjs/-/prismjs-1.26.6.tgz 116ms (cache miss)
+217 http fetch GET 200 https://registry.npmjs.org/format/-/format-0.2.2.tgz 129ms (cache miss)
+218 http fetch GET 200 https://registry.npmjs.org/is-alphanumerical/-/is-alphanumerical-2.0.1.tgz 135ms (cache miss)
+219 http fetch GET 200 https://registry.npmjs.org/fault/-/fault-1.0.4.tgz 145ms (cache miss)
+220 http fetch GET 200 https://registry.npmjs.org/@types/unist/-/unist-3.0.3.tgz 162ms (cache miss)
+221 http fetch GET 200 https://registry.npmjs.org/parse-entities/-/parse-entities-4.0.2.tgz 166ms (cache miss)
+222 http fetch GET 200 https://registry.npmjs.org/@types/hast/-/hast-3.0.5.tgz 171ms (cache miss)
+223 http fetch GET 200 https://registry.npmjs.org/character-entities-legacy/-/character-entities-legacy-3.0.0.tgz 177ms (cache miss)
+224 http fetch GET 200 https://registry.npmjs.org/highlightjs-vue/-/highlightjs-vue-1.0.0.tgz 176ms (cache miss)
+225 http fetch GET 200 https://registry.npmjs.org/is-decimal/-/is-decimal-2.0.1.tgz 179ms (cache miss)
+226 http fetch GET 200 https://registry.npmjs.org/hast-util-parse-selector/-/hast-util-parse-selector-4.0.0.tgz 184ms (cache miss)
+227 http fetch GET 200 https://registry.npmjs.org/lowlight/-/lowlight-1.20.0.tgz 186ms (cache miss)
+228 http fetch GET 200 https://registry.npmjs.org/comma-separated-tokens/-/comma-separated-tokens-2.0.3.tgz 198ms (cache miss)
+229 http fetch GET 200 https://registry.npmjs.org/space-separated-tokens/-/space-separated-tokens-2.0.2.tgz 198ms (cache miss)
+230 http fetch GET 200 https://registry.npmjs.org/refractor/-/refractor-5.0.0.tgz 212ms (cache miss)
+231 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 249ms
+232 silly audit report {
+232 silly audit report   minimatch: [
+232 silly audit report     {
+232 silly audit report       id: 1113465,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-3ppc-4f35-3m26',
+232 silly audit report       title: 'minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=9.0.0 <9.0.6',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1113544,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-7r86-cg39-jmmj',
+232 silly audit report       title: 'minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=9.0.0 <9.0.7',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1113552,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-23c5-xmqv-rm74',
+232 silly audit report       title: 'minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=9.0.0 <9.0.7',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     }
+232 silly audit report   ],
+232 silly audit report   braces: [
+232 silly audit report     {
+232 silly audit report       id: 1240992,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-vfj7-8cjw-p6xm',
+232 silly audit report       title: 'braces vulnerable to stack-exhaustion denial of service through deeply nested patterns',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '<=3.0.3',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     }
+232 silly audit report   ],
+232 silly audit report   glob: [
+232 silly audit report     {
+232 silly audit report       id: 1109842,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-5j98-mcp5-4vw2',
+232 silly audit report       title: 'glob CLI: Command injection via -c/--cmd executes matches with shell:true',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=10.2.0 <10.5.0',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     }
+232 silly audit report   ],
+232 silly audit report   next: [
+232 silly audit report     {
+232 silly audit report       id: 1099638,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-gp8f-8m3g-qvj9',
+232 silly audit report       title: 'Next.js Cache Poisoning',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=14.0.0 <14.2.10',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1100421,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-g77x-44xx-532m',
+232 silly audit report       title: 'Denial of Service condition in Next.js image optimization',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=10.0.0 <14.2.7',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1117931,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-8h8q-6873-q5fj',
+232 silly audit report       title: 'Next.js Vulnerable to Denial of Service with Server Components',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=13.0.0 <15.5.16',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1101438,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-7m27-7ghc-44w9',
+232 silly audit report       title: 'Next.js Allows a Denial of Service (DoS) with Server Actions',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=14.0.0 <14.2.21',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1105461,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-3h52-269p-cp9r',
+232 silly audit report       title: 'Information exposure in Next.js dev server due to lack of origin verification',
+232 silly audit report       severity: 'low',
+232 silly audit report       vulnerable_versions: '>=13.0 <14.2.30',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1111391,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-mwv6-3258-q52c',
+232 silly audit report       title: 'Next Vulnerable to Denial of Service with Server Components',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=13.3.0 <14.2.34',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1107226,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-g5qg-72qw-gw5v',
+232 silly audit report       title: 'Next.js Affected by Cache Key Confusion for Image Optimization API Routes',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=0.9.9 <14.2.31',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1107420,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-7gfc-8cq8-jh5f',
+232 silly audit report       title: 'Next.js authorization bypass vulnerability',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=9.5.5 <14.2.15',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1107512,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-4342-x723-ch2f',
+232 silly audit report       title: 'Next.js Improper Middleware Redirect Handling Leads to SSRF',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=0.9.9 <14.2.32',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1107513,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-xv57-4mr9-wg8v',
+232 silly audit report       title: 'Next.js Content Injection Vulnerability for Image Optimization',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=0.9.9 <14.2.31',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1112182,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-5j59-xgg2-r9c4',
+232 silly audit report       title: 'Next has a Denial of Service with Server Components - Incomplete Fix Follow-Up',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=13.3.1-canary.0 <14.2.35',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1108291,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-qpjv-v59x-3qc4',
+232 silly audit report       title: 'Next.js Race Condition to Cache Poisoning',
+232 silly audit report       severity: 'low',
+232 silly audit report       vulnerable_versions: '>=0.9.9 <14.2.24',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1118942,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-3g8h-86w9-wvmq',
+232 silly audit report       title: "Next.js's Middleware / Proxy redirects can be cache-poisoned",
+232 silly audit report       severity: 'low',
+232 silly audit report       vulnerable_versions: '>=12.2.0 <15.5.16',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1118944,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-ffhc-5mcf-pf4q',
+232 silly audit report       title: 'Next.js vulnerable to cross-site scripting in App Router applications using CSP nonces',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=13.4.0 <15.5.16',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1118946,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-vfv6-92ff-j949',
+232 silly audit report       title: 'Next.js vulnerable to cache poisoning via collisions in React Server Component cache-busting',
+232 silly audit report       severity: 'low',
+232 silly audit report       vulnerable_versions: '>=13.4.6 <15.5.16',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1118948,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-gx5p-jg67-6x7h',
+232 silly audit report       title: 'Next.js has cross-site scripting in beforeInteractive scripts with untrusted input',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=13.0.0 <15.5.16',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1118952,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-h64f-5h5j-jqjh',
+232 silly audit report       title: 'Next.js has a Denial of Service in the Image Optimization API',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=10.0.0 <15.5.16',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1118954,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-c4j6-fc7j-m34r',
+232 silly audit report       title: 'Next.js vulnerable to server-side request forgery in applications using WebSocket upgrades',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=13.4.13 <15.5.16',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1118962,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-36qx-fr4f-26g5',
+232 silly audit report       title: 'Next.js has a Middleware / Proxy bypass in Pages Router applications using i18n',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=12.2.0 <15.5.16',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1112593,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-9g9p-9gw9-jx7f',
+232 silly audit report       title: 'Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns configuration',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=10.0.0 <15.5.10',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1112653,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-h25m-26qc-wcjf',
+232 silly audit report       title: 'Next.js HTTP request deserialization can lead to DoS when using insecure React Server Components',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=13.0.0 <15.0.8',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1113689,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-f82v-jwr5-mffw',
+232 silly audit report       title: 'Authorization Bypass in Next.js Middleware',
+232 silly audit report       severity: 'critical',
+232 silly audit report       vulnerable_versions: '>=14.0.0 <14.2.25',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1114897,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-ggv3-7p47-pfv8',
+232 silly audit report       title: 'Next.js: HTTP request smuggling in rewrites',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=9.5.0 <15.5.13',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1114940,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-3x4c-7xq6-9pq8',
+232 silly audit report       title: 'Next.js: Unbounded next/image disk cache growth can exhaust storage',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=10.0.0 <15.5.14',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1116376,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-q4gf-8mx6-v5v3',
+232 silly audit report       title: 'Next.js has a Denial of Service with Server Components',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=13.0.0 <15.5.15',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1124185,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-89xv-2m56-2m9x',
+232 silly audit report       title: 'Next.js: Server-Side Request Forgery in Server Actions on custom servers',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=14.1.1 <15.5.21',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1124172,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-m99w-x7hq-7vfj',
+232 silly audit report       title: 'Next.js: Denial of Service in App Router using Server Actions',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=13.0.0 <15.5.21',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1124187,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-68g3-v927-f742',
+232 silly audit report       title: 'Next.js: Cache confusion of response bodies for requests with bodies',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=13.0.0 <15.5.21',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1124189,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-4633-3j49-mh5q',
+232 silly audit report       title: 'Next.js: Cache confusion of response bodies for requests with bodies containing invalid UTF-8 byte sequences',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=13.0.0 <15.5.21',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1124191,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-4c39-4ccg-62r3',
+232 silly audit report       title: 'Next.js: Unbounded Server Action payload in Edge runtime',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=13.0.0 <15.5.21',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1124193,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-p9j2-gv94-2wf4',
+232 silly audit report       title: 'Next.js: Server-Side Request Forgery in rewrites via attacker-controlled destination hostname',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '>=12.0.0 <15.5.21',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1124197,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-955p-x3mx-jcvp',
+232 silly audit report       title: 'Next.js: Unauthenticated disclosure of internal Server Function endpoints',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '>=13.0.0 <15.5.21',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1193677,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-p293-qw3h-jr36',
+232 silly audit report       title: 'Next.js: Unauthenticated Remote Code Execution on windows-hosted servers',
+232 silly audit report       severity: 'critical',
+232 silly audit report       vulnerable_versions: '>=13.4.0 <15.5.24',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1193733,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-2xp9-vwfh-vxw4',
+232 silly audit report       title: 'Next.js: Unauthenticated Remote Code Execution in Image Optimization API when AVIF files are used',
+232 silly audit report       severity: 'critical',
+232 silly audit report       vulnerable_versions: '>=10.0.0 <15.5.24',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     }
+232 silly audit report   ],
+232 silly audit report   postcss: [
+232 silly audit report     {
+232 silly audit report       id: 1130709,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-fxqj-rqcc-2cmp',
+232 silly audit report       title: 'PostCSS: incomplete fix of GHSA-6g55-p6wh-862q — attacker-controlled sourceMappingURL reads arbitrary .map files when `from` is unset',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '<=8.5.22',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1117015,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-qx2v-qp2m-jg93',
+232 silly audit report       title: 'PostCSS has XSS via Unescaped </style> in its CSS Stringify Output',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '<8.5.10',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1124252,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-6g55-p6wh-862q',
+232 silly audit report       title: 'PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '<=8.5.11',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     },
+232 silly audit report     {
+232 silly audit report       id: 1139510,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-r28c-9q8g-f849',
+232 silly audit report       title: 'PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure',
+232 silly audit report       severity: 'high',
+232 silly audit report       vulnerable_versions: '<=8.5.17',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     }
+232 silly audit report   ],
+232 silly audit report   'postcss-selector-parser': [
+232 silly audit report     {
+232 silly audit report       id: 1241232,
+232 silly audit report       url: 'https://github.com/advisories/GHSA-rj75-hqrm-r3gf',
+232 silly audit report       title: 'PostCSS: Quadratic complexity in flat selector parsing allows CPU exhaustion',
+232 silly audit report       severity: 'moderate',
+232 silly audit report       vulnerable_versions: '<7.1.6',
+232 silly audit report       cwe: [Array],
+232 silly audit report       cvss: [Object]
+232 silly audit report     }
+232 silly audit report   ]
+232 silly audit report }
+233 silly packumentCache corgi:https://registry.npmjs.org/minimatch cache-miss
+234 silly packumentCache corgi:https://registry.npmjs.org/braces cache-miss
+235 silly packumentCache corgi:https://registry.npmjs.org/glob cache-miss
+236 silly packumentCache corgi:https://registry.npmjs.org/next cache-miss
+237 silly packumentCache corgi:https://registry.npmjs.org/postcss cache-miss
+238 silly packumentCache corgi:https://registry.npmjs.org/postcss-selector-parser cache-miss
+239 http fetch GET 200 https://registry.npmjs.org/@types/unist/-/unist-2.0.11.tgz 228ms (cache miss)
+240 http fetch GET 200 https://registry.npmjs.org/hastscript/-/hastscript-9.0.1.tgz 242ms (cache miss)
+241 http fetch GET 200 https://registry.npmjs.org/@babel/runtime/-/runtime-7.29.7.tgz 275ms (cache miss)
+242 http fetch GET 200 https://registry.npmjs.org/braces 44ms (cache miss)
+243 silly packumentCache corgi:https://registry.npmjs.org/braces set size:undefined disposed:false
+244 http fetch GET 200 https://registry.npmjs.org/postcss-selector-parser 65ms (cache miss)
+245 silly packumentCache corgi:https://registry.npmjs.org/postcss-selector-parser set size:undefined disposed:false
+246 http fetch GET 200 https://registry.npmjs.org/highlight.js/-/highlight.js-10.7.3.tgz 296ms (cache miss)
+247 http fetch GET 200 https://registry.npmjs.org/prismjs/-/prismjs-1.30.0.tgz 308ms (cache miss)
+248 http fetch GET 200 https://registry.npmjs.org/minimatch 94ms (cache miss)
+249 silly packumentCache corgi:https://registry.npmjs.org/minimatch set size:undefined disposed:false
+250 http fetch GET 200 https://registry.npmjs.org/glob 99ms (cache miss)
+251 silly packumentCache corgi:https://registry.npmjs.org/glob set size:undefined disposed:false
+252 http fetch GET 200 https://registry.npmjs.org/postcss 105ms (cache miss)
+253 silly packumentCache corgi:https://registry.npmjs.org/postcss set size:undefined disposed:false
+254 http fetch GET 200 https://registry.npmjs.org/react-syntax-highlighter/-/react-syntax-highlighter-16.1.1.tgz 529ms (cache miss)
+255 http fetch GET 200 https://registry.npmjs.org/next 555ms (cache miss)
+256 silly packumentCache corgi:https://registry.npmjs.org/next set size:undefined disposed:false
+257 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree cache-miss
+258 http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree 422ms (cache miss)
+259 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree set size:undefined disposed:false
+260 silly packumentCache corgi:https://registry.npmjs.org/chokidar cache-miss
+261 silly packumentCache corgi:https://registry.npmjs.org/micromatch cache-miss
+262 http fetch GET 200 https://registry.npmjs.org/micromatch 100ms (cache miss)
+263 silly packumentCache corgi:https://registry.npmjs.org/micromatch set size:undefined disposed:false
+264 http fetch GET 200 https://registry.npmjs.org/chokidar 107ms (cache miss)
+265 silly packumentCache corgi:https://registry.npmjs.org/chokidar set size:undefined disposed:false
+266 silly packumentCache corgi:https://registry.npmjs.org/@next%2feslint-plugin-next cache-miss
+267 http fetch GET 200 https://registry.npmjs.org/@next%2feslint-plugin-next 323ms (cache miss)
+268 silly packumentCache corgi:https://registry.npmjs.org/@next%2feslint-plugin-next set size:undefined disposed:false
+269 silly packumentCache corgi:https://registry.npmjs.org/postcss-nested cache-miss
+270 silly packumentCache corgi:https://registry.npmjs.org/tailwindcss cache-miss
+271 http fetch GET 200 https://registry.npmjs.org/postcss-nested 55ms (cache miss)
+272 silly packumentCache corgi:https://registry.npmjs.org/postcss-nested set size:undefined disposed:false
+273 http fetch GET 200 https://registry.npmjs.org/tailwindcss 262ms (cache miss)
+274 silly packumentCache corgi:https://registry.npmjs.org/tailwindcss set size:undefined disposed:false
+275 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2fparser cache-miss
+276 http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2fparser 338ms (cache miss)
+277 silly packumentCache corgi:https://registry.npmjs.org/@typescript-eslint%2fparser set size:undefined disposed:false
+278 silly packumentCache corgi:https://registry.npmjs.org/fast-glob cache-miss
+279 http fetch GET 200 https://registry.npmjs.org/fast-glob 108ms (cache miss)
+280 silly packumentCache corgi:https://registry.npmjs.org/fast-glob set size:undefined disposed:false
+281 silly packumentCache corgi:https://registry.npmjs.org/eslint-config-next cache-miss
+282 http fetch GET 200 https://registry.npmjs.org/eslint-config-next 201ms (cache miss)
+283 silly packumentCache corgi:https://registry.npmjs.org/eslint-config-next set size:undefined disposed:false
+284 silly packumentCache corgi:https://registry.npmjs.org/globby cache-miss
+285 http fetch GET 200 https://registry.npmjs.org/globby 136ms (cache miss)
+286 silly packumentCache corgi:https://registry.npmjs.org/globby set size:undefined disposed:false
+287 silly ADD node_modules/is-alphabetical
+288 silly ADD node_modules/character-entities
+289 silly ADD node_modules/is-hexadecimal
+290 silly ADD node_modules/is-decimal
+291 silly ADD node_modules/is-alphanumerical
+292 silly ADD node_modules/decode-named-character-reference
+293 silly ADD node_modules/character-reference-invalid
+294 silly ADD node_modules/character-entities-legacy
+295 silly ADD node_modules/space-separated-tokens
+296 silly ADD node_modules/property-information
+297 silly ADD node_modules/hast-util-parse-selector
+298 silly ADD node_modules/comma-separated-tokens
+299 silly ADD node_modules/@types/unist
+300 silly ADD node_modules/parse-entities
+301 silly ADD node_modules/parse-entities/node_modules/@types/unist
+302 silly ADD node_modules/hastscript
+303 silly ADD node_modules/@types/prismjs
+304 silly ADD node_modules/@types/hast
+305 silly ADD node_modules/format
+306 silly ADD node_modules/fault
+307 silly ADD node_modules/refractor
+308 silly ADD node_modules/prismjs
+309 silly ADD node_modules/lowlight
+310 silly ADD node_modules/highlightjs-vue
+311 silly ADD node_modules/highlight.js
+312 silly ADD node_modules/@babel/runtime
+313 silly ADD node_modules/react-syntax-highlighter
+314 warn install-scripts 2 packages had install scripts blocked because they are not covered by allowScripts:
+314 warn install-scripts   fsevents@2.3.3 (install: (install scripts present))
+314 warn install-scripts   unrs-resolver@1.12.2 (postinstall: node postinstall.js)
+314 warn install-scripts
+314 warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+315 verbose cwd /Users/trungtran/Desktop/algo-vis
+316 verbose os Darwin 27.0.0
+317 verbose node v26.9.0
+318 verbose npm  v12.2.0
+319 verbose exit 0
+320 info ok

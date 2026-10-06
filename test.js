@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const binary_sequence_1 = require("./lib/tracers/binary-sequence");
+const subset_1 = require("./lib/tracers/subset");
+const combination_1 = require("./lib/tracers/combination");
+const permutation_1 = require("./lib/tracers/permutation");
+console.log('BS:', ((0, binary_sequence_1.generateTracesBinarySequence)({ n: 4 }) || []).length);
+console.log('Perm:', ((0, permutation_1.generateTracesPermutation)({ n: 3 }) || []).length);
+console.log('Comb:', ((0, combination_1.generateTracesCombination)({ n: 5, c: 3 }) || []).length);
+console.log('Subset:', ((0, subset_1.generateTracesSubset)({ n: 3 }) || []).length);
