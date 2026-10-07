@@ -14,7 +14,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: Chuỗi S1\nDòng 2: Chuỗi S2",
     tags: ["DP 2 Chiều", "So Khớp Chuỗi", "Truy Vết Kq"],
     keywords: ["lcs", "longest common subsequence", "day con chung", "chuoi", "quy hoach dong"],
-    problemStatement: "Cho hai chuỗi ký tự S1 và S2. Dãy con (subsequence) của một chuỗi là một chuỗi mới được tạo ra bằng cách xóa đi không hoặc nhiều ký tự và giữ nguyên thứ tự các ký tự còn lại. Hãy tìm độ dài của dãy con chung dài nhất giữa S1 và S2, đồng thời truy vết ra dãy con đó."
+    problemStatement: "Cho hai chuỗi ký tự S1 và S2. Dãy con (subsequence) của một chuỗi là một chuỗi mới được tạo ra bằng cách xóa đi không hoặc nhiều ký tự và giữ nguyên thứ tự các ký tự còn lại. Hãy tìm độ dài của dãy con chung dài nhất giữa S1 và S2, đồng thời truy vết ra dãy con đó.",
+    stateDefinition: "Gọi dp[i][j] là độ dài dãy con chung lớn nhất của tiền tố s1[0...i-1] và tiền tố s2[0...j-1].",
+    transitionFormula: "Nếu s1[i-1] == s2[j-1]: dp[i][j] = dp[i-1][j-1] + 1\nTrường hợp khác: dp[i][j] = max(dp[i-1][j], dp[i][j-1])"
   },
   DIJKSTRA: {
     id: 'DIJKSTRA',
@@ -38,7 +40,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: Sức chứa W\nDòng 2: Danh sách trọng lượng (w1 w2 ... wn)\nDòng 3: Danh sách giá trị (v1 v2 ... vn)",
     tags: ["Quy Hoạch Động", "Ba Lô 0/1", "Tối Ưu Sức Chứa"],
     keywords: ["cai tui", "ba lo", "knapsack", "quy hoach dong", "0/1 knapsack"],
-    problemStatement: "Cho N đồ vật, mỗi đồ vật thứ i có trọng lượng W[i] và giá trị V[i]. Giới hạn sức chứa tối đa của ba lô là W. Hãy chọn một tập hợp các đồ vật sao cho tổng trọng lượng không vượt quá W và mang lại tổng giá trị lớn nhất."
+    problemStatement: "Cho N đồ vật, mỗi đồ vật thứ i có trọng lượng W[i] và giá trị V[i]. Giới hạn sức chứa tối đa của ba lô là W. Hãy chọn một tập hợp các đồ vật sao cho tổng trọng lượng không vượt quá W và mang lại tổng giá trị lớn nhất.",
+    stateDefinition: "Gọi dp[j] là tổng giá trị tối đa đạt được với sức chứa chính xác hoặc nhỏ hơn bằng j.",
+    transitionFormula: "Chạy từng vật i: dp[j] = max(dp[j], dp[j - W[i]] + V[i]) với j duyệt ngược từ W về W[i]"
   },
   MO: {
     id: 'MO',
@@ -74,7 +78,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: N (Số phần tử)\nDòng 2: Mảng N phần tử",
     tags: ["Mảng Tails", "Tìm Kiếm Nhị Phân", "Dãy Con Tăng Dài Nhất"],
     keywords: ["day con tang dai nhat", "longest increasing subsequence", "binary search", "tails", "lis"],
-    problemStatement: "Cho một dãy số gồm N phần tử. Hãy tìm độ dài của dãy con tăng dần nghiêm ngặt dài nhất (Longest Increasing Subsequence). Thuật toán kết hợp lưu vết quy hoạch động với tìm kiếm nhị phân trên mảng Tails để đạt độ phức tạp tối ưu O(N log N)."
+    problemStatement: "Cho một dãy số gồm N phần tử. Hãy tìm độ dài của dãy con tăng dần nghiêm ngặt dài nhất (Longest Increasing Subsequence). Thuật toán kết hợp lưu vết quy hoạch động với tìm kiếm nhị phân trên mảng Tails để đạt độ phức tạp tối ưu O(N log N).",
+    stateDefinition: "Gọi tails[i] là phần tử kết thúc nhỏ nhất cục bộ của tất cả các dãy con tăng dần có độ dài đúng bằng i+1.",
+    transitionFormula: "Nếu x > tails cuối, push x. Ngược lại, tìm nhị phân vị trí i nhỏ nhất sao cho tails[i] ≥ x và gán tails[i] = x."
   },
   PBS: {
     id: 'PBS',
@@ -98,7 +104,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: Cận trên N\nDòng 2: Tổng chữ số mong muốn S",
     tags: ["DP Chữ Số", "Tiền Tố Số", "Đếm Thỏa Điều Kiện"],
     keywords: ["chu so", "dem so", "digit dp", "prefix", "tong chu so"],
-    problemStatement: "Cho khoảng số nguyên [L, R] với cận trên R có thể lên đến 10^18 hoặc lớn hơn. Hãy đếm số lượng các số nguyên trong đoạn thỏa mãn các điều kiện chữ số đặt ra (ví dụ: tổng các chữ số bằng S, không chứa chữ số cấm). Thuật toán quy hoạch động xây dựng số theo từng chữ số từ trái qua phải kết hợp biến cờ giới hạn (tight)."
+    problemStatement: "Cho khoảng số nguyên [L, R] với cận trên R có thể lên đến 10^18 hoặc lớn hơn. Hãy đếm số lượng các số nguyên trong đoạn thỏa mãn các điều kiện chữ số đặt ra (ví dụ: tổng các chữ số bằng S, không chứa chữ số cấm). Thuật toán quy hoạch động xây dựng số theo từng chữ số từ trái qua phải kết hợp biến cờ giới hạn (tight).",
+    stateDefinition: "Gọi dp(pos, sum, tight) là số lượng số đếm được bắt đầu từ vị trí pos, tổng các chữ số đã chọn là sum, và trạng thái tight (có đang bị giới hạn bởi chữ số của R hay không).",
+    transitionFormula: "dp(pos, sum, tight) = ∑ dp(pos + 1, sum + d, new_tight) với d là chữ số hợp lệ từ 0 đến limit."
   },
   BRACKET_DP: {
     id: 'BRACKET_DP',
@@ -206,7 +214,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: N (Tổng điểm mục tiêu)",
     tags: ["CSES #1633", "DP 1 Chiều", "Modulo 10^9+7"],
     keywords: ["xuc xac", "dice", "cses 1633", "tong", "dice combinations"],
-    problemStatement: "Bạn có một con xúc xắc 6 mặt (giá trị từ 1 đến 6) và được gieo xúc xắc bao nhiêu lần tùy ý. Cho số nguyên N, hãy tính số tổ hợp các lần gieo (có phân biệt thứ tự) sao cho tổng các mặt gieo được đúng bằng N theo modulo 10^9+7."
+    problemStatement: "Bạn có một con xúc xắc 6 mặt (giá trị từ 1 đến 6) và được gieo xúc xắc bao nhiêu lần tùy ý. Cho số nguyên N, hãy tính số tổ hợp các lần gieo (có phân biệt thứ tự) sao cho tổng các mặt gieo được đúng bằng N theo modulo 10^9+7.",
+    stateDefinition: "Gọi dp[i] là số cách tạo ra tổng đúng bằng i bằng cách gieo xúc xắc (các mặt từ 1 đến 6).",
+    transitionFormula: "dp[i] = ∑ dp[i - x] với mọi x ∈ {1, 2, 3, 4, 5, 6} và i - x ≥ 0"
   },
   MINIMIZING_COINS: {
     id: 'MINIMIZING_COINS',
@@ -218,7 +228,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: N X (Số mệnh giá và số tiền mục tiêu)\nDòng 2: Mảng N mệnh giá xu (c1 c2 ... cn)",
     tags: ["CSES #1634", "Đổi Tiền Tối Thiểu", "Quy Hoạch Động"],
     keywords: ["dong xu", "coins", "cses 1634", "so luong it nhat", "doi tien", "minimizing coins"],
-    problemStatement: "Cho số tiền mục tiêu X và N mệnh giá đồng xu phân biệt với số lượng không giới hạn. Hãy tìm số lượng đồng xu ít nhất cần dùng để ghép thành đúng tổng số tiền X, hoặc in ra -1 nếu không có cách nào tạo được tổng đó."
+    problemStatement: "Cho số tiền mục tiêu X và N mệnh giá đồng xu phân biệt với số lượng không giới hạn. Hãy tìm số lượng đồng xu ít nhất cần dùng để ghép thành đúng tổng số tiền X, hoặc in ra -1 nếu không có cách nào tạo được tổng đó.",
+    stateDefinition: "Gọi dp[i] là số lượng đồng xu chênh lệch tối thiểu cần thiết để tạo ra chính xác tổng số tiền i.",
+    transitionFormula: "dp[i] = min(dp[i], dp[i - coin_value] + 1) với mọi đồng xu thỏa coin_value ≤ i"
   },
   COIN_COMBINATIONS_1: {
     id: 'COIN_COMBINATIONS_1',
@@ -230,7 +242,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: N X (Số mệnh giá và số tiền mục tiêu)\nDòng 2: Mảng N mệnh giá xu (c1 c2 ... cn)",
     tags: ["CSES #1635", "Hoán Vị Có Thứ Tự", "CSES DP"],
     keywords: ["dong xu", "coins", "cses 1635", "hoan vi", "thu tu quan trong", "coin combinations 1"],
-    problemStatement: "Cho số tiền mục tiêu X và N mệnh giá đồng xu khác nhau. Hãy đếm số cách tạo ra tổng số tiền X. Hai cách chọn có cùng tập hợp đồng xu nhưng khác nhau về thứ tự chọn vẫn được tính là hai cách riêng biệt."
+    problemStatement: "Cho số tiền mục tiêu X và N mệnh giá đồng xu khác nhau. Hãy đếm số cách tạo ra tổng số tiền X. Hai cách chọn có cùng tập hợp đồng xu nhưng khác nhau về thứ tự chọn vẫn được tính là hai cách riêng biệt.",
+    stateDefinition: "Gọi dp[i] là tổng số cách (tính hoán vị) để tạo ra số tiền i từ các đồng xu đã cho.",
+    transitionFormula: "dp[i] = ∑ dp[i - c] với c là mệnh giá các đồng xu (c ≤ i)"
   },
   COIN_COMBINATIONS_2: {
     id: 'COIN_COMBINATIONS_2',
@@ -242,7 +256,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: N X (Số mệnh giá và số tiền mục tiêu)\nDòng 2: Mảng N mệnh giá xu (c1 c2 ... cn)",
     tags: ["CSES #1636", "Tổ Hợp Không Thứ Tự", "CSES DP"],
     keywords: ["dong xu", "coins", "cses 1636", "to hop", "khong quan tam thu tu", "coin combinations 2"],
-    problemStatement: "Cho số tiền mục tiêu X và N mệnh giá đồng xu. Hãy đếm số tổ hợp cách chọn đồng xu để tạo ra tổng X. Điểm khác biệt so với phần I là ở đây thứ tự chọn không quan trọng (ví dụ tổ hợp 2+3 và 3+2 chỉ tính là một tổ hợp duy nhất)."
+    problemStatement: "Cho số tiền mục tiêu X và N mệnh giá đồng xu. Hãy đếm số tổ hợp cách chọn đồng xu để tạo ra tổng X. Điểm khác biệt so với phần I là ở đây thứ tự chọn không quan trọng (ví dụ tổ hợp 2+3 và 3+2 chỉ tính là một tổ hợp duy nhất).",
+    stateDefinition: "Gọi dp[x] là số cách (không xét thứ tự) để nối thành số tiền x.",
+    transitionFormula: "Duyệt qua từng đồng xu c: dp[x] = dp[x] + dp[x - c] (Bằng cách cố định c ở ngoài, ta loai bỏ trùng lặp thứ tự)"
   },
   REMOVING_DIGITS: {
     id: 'REMOVING_DIGITS',
@@ -254,7 +270,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: N (Số nguyên dương ban đầu)",
     tags: ["CSES #1637", "Trừ Chữ Số Lớn Nhất", "Tham Lam & Quy Hoạch Động"],
     keywords: ["tru chu so", "cses 1637", "digits", "so buoc it nhat", "removing digits"],
-    problemStatement: "Cho một số nguyên dương N. Tại mỗi bước, bạn được phép trừ N đi một giá trị đúng bằng một trong các chữ số xuất hiện trong biểu diễn thập phân của N. Hãy tìm số bước ít nhất để đưa N về bằng 0."
+    problemStatement: "Cho một số nguyên dương N. Tại mỗi bước, bạn được phép trừ N đi một giá trị đúng bằng một trong các chữ số xuất hiện trong biểu diễn thập phân của N. Hãy tìm số bước ít nhất để đưa N về bằng 0.",
+    stateDefinition: "Gọi dp[i] là số bước tối thiểu để giảm giá trị i về 0.",
+    transitionFormula: "dp[i] = min(dp[i], dp[i - d] + 1) với d là bất kỳ chữ số nào xuất hiện trong i"
   },
   GRID_PATHS: {
     id: 'GRID_PATHS',
@@ -266,7 +284,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: N (Kích thước lưới N x N)\nN dòng tiếp theo: Mỗi dòng N ký tự ('.' là ô đi được, '*' là chướng ngại vật)",
     tags: ["CSES #1638", "Đường Đi Trên Lưới 2D", "Tránh Ô Chướng Ngại Vật '*'"],
     keywords: ["duong di tren luoi", "grid paths", "cses 1638", "me cung", "bay"],
-    problemStatement: "Cho lưới ô vuông ma trận kích thước N x N với một số ô bị đánh dấu chướng ngại vật '*'. Xuất phát từ ô trên cùng bên trái (0, 0) và chỉ được di chuyển sang phải hoặc đi xuống, hãy tính số đường đi an toàn để đến ô đích ở góc dưới cùng bên phải (N-1, N-1)."
+    problemStatement: "Cho lưới ô vuông ma trận kích thước N x N với một số ô bị đánh dấu chướng ngại vật '*'. Xuất phát từ ô trên cùng bên trái (0, 0) và chỉ được di chuyển sang phải hoặc đi xuống, hãy tính số đường đi an toàn để đến ô đích ở góc dưới cùng bên phải (N-1, N-1).",
+    stateDefinition: "Gọi dp[r][c] là số cách đường đi hợp lệ đi từ ô (0,0) đến điểm đích ở tọa độ (r, c).",
+    transitionFormula: "Nếu grid[r][c] == '*': dp[r][c] = 0. Ngược lại: dp[r][c] = dp[r-1][c] + dp[r][c-1]"
   },
   BOOK_SHOP: {
     id: 'BOOK_SHOP',
@@ -278,7 +298,9 @@ export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
     help: "Dòng 1: N X (Số cuốn sách và ngân sách tối đa)\nDòng 2: Mảng N giá sách (h1 h2 ... hn)\nDòng 3: Mảng N số trang sách (s1 s2 ... sn)",
     tags: ["CSES #1158", "Mua Sách Ba Lô", "Ngân Sách Tối Đa"],
     keywords: ["mua sach", "book shop", "cses 1158", "ngan sach", "trang sach", "knapsack"],
-    problemStatement: "Tại một hiệu sách có N cuốn sách, cuốn thứ i có giá H[i] đồng và gồm S[i] trang. Với ngân sách giới hạn tối đa là X đồng, hãy chọn mua các cuốn sách sao cho thu được tổng số trang sách đọc được nhiều nhất có thể."
+    problemStatement: "Tại một hiệu sách có N cuốn sách, cuốn thứ i có giá H[i] đồng và gồm S[i] trang. Với ngân sách giới hạn tối đa là X đồng, hãy chọn mua các cuốn sách sao cho thu được tổng số trang sách đọc được nhiều nhất có thể.",
+    stateDefinition: "Gọi dp[j] là số trang sách tối đa có thể mua được với ngân sách lớn nhất là j đồng.",
+    transitionFormula: "Chạy từng sách i: dp[j] = max(dp[j], dp[j - H[i]] + S[i]) với j duyệt ngược từ X về H[i]"
   },
   SPARSE_TABLE: {
     id: 'SPARSE_TABLE',

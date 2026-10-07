@@ -79,6 +79,8 @@ export interface AlgoMeta {
   tags: string[];
   keywords?: string[];
   problemStatement?: string;
+  stateDefinition?: string;
+  transitionFormula?: string;
 }
 
 export interface CategoryItem {

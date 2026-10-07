@@ -84,8 +84,26 @@ export default function AlgorithmBanner({
               <ChevronDown size={14} className="transition-transform duration-200 group-open:-rotate-180" />
             </div>
           </summary>
-          <div className="px-4 pb-4 pt-2.5 border-t border-white/10 text-xs text-zinc-200 font-sans leading-relaxed flex flex-col gap-2">
+          <div className="px-4 pb-4 pt-2.5 border-t border-white/10 text-xs text-zinc-200 font-sans leading-relaxed flex flex-col gap-3">
             <p>{activeMeta.problemStatement}</p>
+            {activeMeta.stateDefinition && (
+              <div className="bg-[#0f172a]/60 border-l-[3px] border-blue-500 py-3 px-4 flex flex-col gap-2 shadow-inner rounded-r-md mt-1">
+                 <div className="flex items-center gap-1.5 font-bold text-blue-300 font-mono text-[10px] uppercase tracking-[0.1em] mb-0.5">
+                    Trạng thái Quy Hoạch Động (DP State)
+                 </div>
+                 <p className="font-mono text-white/90 text-[13px]">{activeMeta.stateDefinition}</p>
+                 {activeMeta.transitionFormula && (
+                    <>
+                      <div className="flex items-center gap-1.5 font-bold text-emerald-400 font-mono text-[10px] uppercase tracking-[0.1em] mt-1.5 mb-0.5">
+                        Công thức chuyển trạng thái (Transition Formula)
+                      </div>
+                      <p className="font-mono text-emerald-200 text-[13px] font-semibold bg-emerald-900/30 p-2.5 border border-emerald-500/20 rounded-md">
+                        {activeMeta.transitionFormula}
+                      </p>
+                    </>
+                 )}
+              </div>
+            )}
           </div>
         </details>
       )}
