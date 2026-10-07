@@ -28,8 +28,10 @@ import { InputGridPaths, StepGridPaths } from '@/lib/tracers/grid-paths';
 import { InputBookShop, StepBookShop } from '@/lib/tracers/book-shop';
 import { InputSparseTable, StepSparseTable } from '@/lib/tracers/sparse-table';
 import { InputTrie, StepTrie } from '@/lib/tracers/trie';
+import { InputLcs, StepLcs } from '@/lib/tracers/lcs';
 
 export type TabType = 
+  | 'LCS'
   | 'DIJKSTRA' 
   | 'DP' 
   | 'MO' 
@@ -96,6 +98,7 @@ export interface CategoryStyle {
 }
 
 export interface AllInputs {
+  LCS: InputLcs;
   DIJKSTRA: InputDijkstra;
   DP: InputDP;
   MO: InputMo;
@@ -127,6 +130,7 @@ export interface AllInputs {
 }
 
 export interface AllTraces {
+  LCS: StepLcs[];
   DIJKSTRA: StepDijkstra[];
   DP: StepDP[];
   MO: StepMo[];

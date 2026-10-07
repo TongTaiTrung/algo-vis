@@ -4,6 +4,7 @@ import React from 'react';
 import { Minimize } from 'lucide-react';
 import { TabType, AllInputs, AllTraces } from '@/types/algorithm';
 
+import LcsVisualizer from '@/components/visualizers/Lcs';
 import DijkstraVisualizer from '@/components/visualizers/Dijkstra';
 import DPKnapsackVisualizer from '@/components/visualizers/DPKnapsack';
 import MoAlgorithmVisualizer from '@/components/visualizers/MoAlgorithm';
@@ -72,6 +73,13 @@ export default function VisualizerContainer({
         </button>
       )}
 
+      {activeTab === 'LCS' && (
+        <LcsVisualizer 
+          key={JSON.stringify(inputs.LCS)} 
+          input={inputs.LCS} 
+          steps={traces.LCS} 
+        />
+      )}
       {activeTab === 'DIJKSTRA' && (
         <DijkstraVisualizer 
           key={JSON.stringify(inputs.DIJKSTRA)} 

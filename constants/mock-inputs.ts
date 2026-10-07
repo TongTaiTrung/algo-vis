@@ -1,4 +1,5 @@
 import { InputType as InputDijkstra } from '@/lib/tracers/dijkstra';
+import { InputLcs } from '@/lib/tracers/lcs';
 import { InputDP } from '@/lib/tracers/dp-knapsack';
 import { InputMo } from '@/lib/tracers/mo-algorithm';
 import { InputCentroid } from '@/lib/tracers/centroid';
@@ -141,6 +142,8 @@ export const MOCK_COIN_COMB_2: InputCoinCombinations2 = { target: 9, coins: [2, 
 
 export const MOCK_REMOVING_DIGITS: InputRemovingDigits = { N: 27 };
 
+export const MOCK_LCS: InputLcs = { s1: "ABCDGH", s2: "AEDFHR" };
+
 export const MOCK_GRID_PATHS: InputGridPaths = { n: 4, grid: ["....", ".*..", "...*", "...."] };
 
 export const MOCK_BOOK_SHOP: InputBookShop = { budget: 10, prices: [4, 8, 5, 3], pages: [5, 12, 8, 1] };
@@ -167,6 +170,7 @@ export const MOCK_TRIE: InputTrie = {
 };
 
 export const DEFAULT_INPUTS: AllInputs = {
+  LCS: MOCK_LCS,
 
   BINARY_SEQUENCE: { n: 4 },
   PERMUTATION: { n: 3 },

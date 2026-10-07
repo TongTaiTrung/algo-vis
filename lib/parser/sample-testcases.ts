@@ -1,4 +1,9 @@
 export const SAMPLE_TESTCASES: Record<string, { name: string; data: string }[]> = {
+  LCS: [
+    { name: "Sample 1 (Basic)", data: "ABCDGH\nAEDFHR" },
+    { name: "Sample 2 (No Match)", data: "ABC\nDEF" },
+    { name: "Sample 3 (Full Match)", data: "ALGO\nALGO" }
+  ],
   DIJKSTRA: [
     { name: "Sample 1 (Basic)", data: "5 7 0\n0 1 4\n0 2 2\n1 2 1\n1 3 5\n2 3 8\n2 4 10\n3 4 2" },
     { name: "Sample 2 (Linear Path)", data: "4 3 0\n0 1 10\n1 2 20\n2 3 30" },

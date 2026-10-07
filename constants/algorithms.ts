@@ -4,6 +4,18 @@ import {
 import { TabType, AlgoMeta, CategoryItem, CategoryStyle } from '@/types/algorithm';
 
 export const ALGORITHM_CATALOG: Record<TabType, AlgoMeta> = {
+  LCS: {
+    id: 'LCS',
+    name: "Dãy Con Chung Dài Nhất (LCS)",
+    category: "DP_BASIC",
+    complexity: "O(N · M)",
+    sourceBadge: "Quy Hoạch Động Kinh Điển",
+    desc: "Tìm dãy con chung dài nhất của hai chuỗi bằng mảng quy hoạch động 2D.",
+    help: "Dòng 1: Chuỗi S1\nDòng 2: Chuỗi S2",
+    tags: ["DP 2 Chiều", "So Khớp Chuỗi", "Truy Vết Kq"],
+    keywords: ["lcs", "longest common subsequence", "day con chung", "chuoi", "quy hoach dong"],
+    problemStatement: "Cho hai chuỗi ký tự S1 và S2. Dãy con (subsequence) của một chuỗi là một chuỗi mới được tạo ra bằng cách xóa đi không hoặc nhiều ký tự và giữ nguyên thứ tự các ký tự còn lại. Hãy tìm độ dài của dãy con chung dài nhất giữa S1 và S2, đồng thời truy vết ra dãy con đó."
+  },
   DIJKSTRA: {
     id: 'DIJKSTRA',
     name: "Dijkstra - Đường Đi Ngắn Nhất",

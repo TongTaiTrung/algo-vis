@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { AllInputs, AllTraces } from '@/types/algorithm';
 
+import { traceLcs as generateLcs } from '@/lib/tracers/lcs';
 import { generateTraces as generateDijkstra } from '@/lib/tracers/dijkstra';
 import { generateTracesDP } from '@/lib/tracers/dp-knapsack';
 import { generateTracesMo } from '@/lib/tracers/mo-algorithm';
@@ -32,6 +33,7 @@ import { generateTracesSparseTable } from '@/lib/tracers/sparse-table';
 import { generateTracesTrie } from '@/lib/tracers/trie';
 
 export function useAlgorithmTraces(inputs: AllInputs): AllTraces {
+  const tracesLcs = useMemo(() => { try { return generateLcs(inputs.LCS); } catch { return []; } }, [inputs.LCS]);
   const tracesDijkstra = useMemo(() => { try { return generateDijkstra(inputs.DIJKSTRA); } catch { return []; } }, [inputs.DIJKSTRA]);
   const tracesDp = useMemo(() => { try { return generateTracesDP(inputs.DP); } catch { return []; } }, [inputs.DP]);
   const tracesMo = useMemo(() => { try { return generateTracesMo(inputs.MO); } catch { return []; } }, [inputs.MO]);
@@ -64,7 +66,7 @@ export function useAlgorithmTraces(inputs: AllInputs): AllTraces {
   const tracesSubset = useMemo(() => { try { return generateTracesSubset(inputs.SUBSET); } catch { return []; } }, [inputs.SUBSET]);
 
   return {
-
+    LCS: tracesLcs,
     DIJKSTRA: tracesDijkstra,
     DP: tracesDp,
     MO: tracesMo,

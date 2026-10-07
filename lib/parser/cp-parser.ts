@@ -1,3 +1,4 @@
+import { InputLcs } from '@/lib/tracers/lcs';
 import { InputType as InputDijkstra } from '@/lib/tracers/dijkstra';
 import { InputDP } from '@/lib/tracers/dp-knapsack';
 import { InputMo } from '@/lib/tracers/mo-algorithm';
@@ -32,6 +33,11 @@ export function parseCPText(tab: string, rawText: string): any {
   
   try {
     switch (tab) {
+      case 'LCS': {
+        const s1 = nextLine();
+        const s2 = nextLine();
+        return { s1, s2 } as InputLcs;
+      }
       case 'DIJKSTRA': {
         const [N, M, source] = nextNumbers();
         const nodes = Array.from({length: N}).map((_, i) => ({ id: `${i}`, x: 10 + Math.random() * 80, y: 10 + Math.random() * 80 }));
